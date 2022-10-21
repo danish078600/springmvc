@@ -19,21 +19,39 @@
 <body>
 	<div class="container mt-5">
 	<h3 class="text-center">Registration form</h3>
-		<form action="/processform" method="post">
+		<form action="processform" method="post">
 			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label> <input
-					type="email" class="form-control" id="exampleInputEmail1"
-					aria-describedby="emailHelp" placeholder="Enter email">
+				<label for="exampleInputEmail1">Email address</label> 
+				<input
+					type="email" 
+					class="form-control" 
+					id="exampleInputEmail1"
+					aria-describedby="emailHelp" 
+					placeholder="Enter email"
+					name="email"
+					>
 			</div>
 			<div class="form-group">
-				<label for="userName">User Name</label> <input
-					type="email" class="form-control" id="userName"
-					aria-describedby="emailHelp" placeholder="Enter Name">
+				<label for="userName">User Name</label> 
+				<input
+					type="text" 
+					class="form-control" 
+					id="userName"
+					aria-describedby="emailHelp" 
+					placeholder="Enter Name"
+					name="username"
+					>
 			</div>
 			<div class="form-group">
-				<label for="userPassword">User Password</label> <input
-					type="password" class="form-control" id="userPassword"
-					aria-describedby="emailHelp" placeholder="Enter Name">
+				<label for="userPassword">User Password</label> 
+				<input
+					type="password" 
+					class="form-control" 
+					id="userPassword"
+					aria-describedby="emailHelp" 
+					placeholder="Enter Name"
+					name="password"
+					>
 			</div>
 			<div class="container text-center">
 				<button type="submit" class="btn btn-success">Sign Up</button>
