@@ -12,8 +12,9 @@ import springmvc.model.User;
 @Controller
 public class ContactController {
 	@RequestMapping("/contact")
-	public String showForm()
+	public String showForm(Model m)
 	{
+		m.addAttribute("Header","Danish");
 		return "contact";
 	}
 	@RequestMapping(path = "/processform",method = RequestMethod.POST )
